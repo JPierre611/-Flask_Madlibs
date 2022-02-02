@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Madlibs - Select Story</h1>
+  <form action="/words">
+    <label for="stories">Select a story title:</label>
+    <select name="stories" id="stories">
+      {% for index in range(stories_length) %}
+       <option value="{{index}}">{{stories[index].title}}</option>       
+      {% endfor %}
+    </select>
+    <button class="submit">Go</button>
+  </form>
+{% endblock %}

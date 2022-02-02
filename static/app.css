@@ -1,0 +1,17 @@
+.page {
+  background-color:skyblue;
+}
+
+.question {
+  display: block;
+  margin-top: 20px;
+}
+
+.answer {
+  display: inline;
+}
+
+.submit {
+  display: block;
+  margin-top: 20px;
+}
